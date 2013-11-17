@@ -1,0 +1,4149 @@
+﻿<!DOCTYPE HTML>
+<html> 
+<head> 
+<meta name="viewport" content="width=default-width; user-scalable=no" /> 
+<meta http-equiv="Content-type" content="text/html;charset=utf-8"> 
+<title>Smash Pick the Game</title> 
+     
+        
+<!-- TIMER SECTION -->
+<script type='text/javascript' language='javascript' src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.timer.js"></script>
+<!-- This file contains all the JS used in the demo -->
+<script type='text/javascript' src="timer-demo.js"></script>
+<!-- TIMER END SECTION -->
+
+
+<script type="text/javascript" charset="utf-8"> 
+
+	// initialize array
+	var arrA = [];
+	var arrB = [];
+	var arrC = [];
+	var arrD = [];
+	var GoalPositionNo =1; 
+
+Array.prototype.randomize = function()
+{
+	var i = this.length, j, temp;
+	while ( --i )
+	{
+		j = Math.floor( Math.random() * (i - 1) );
+		temp = this[i];
+		this[i] = this[j];
+		this[j] = temp;
+	}
+}
+
+
+function AddRow()
+{
+	if (GoalPositionNo == 1)
+	{
+	    document.getElementById('RowNo2').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 2)
+	{
+	    document.getElementById('RowNo3').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 3)
+	{
+	    document.getElementById('RowNo4').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 4)
+	{
+	    document.getElementById('RowNo5').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 5)
+	{
+	    document.getElementById('RowNo6').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 6)
+	{
+	    document.getElementById('RowNo7').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 7)
+	{
+	    document.getElementById('RowNo8').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 8)
+	{
+	    document.getElementById('RowNo9').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 9)
+	{
+	    document.getElementById('RowNo10').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 10)
+	{
+	    document.getElementById('RowNo11a').style.display = '';		    
+	    document.getElementById('RowNo11').style.display = '';		    
+	}
+
+
+
+	if (GoalPositionNo == 11)
+	{
+	    document.getElementById('RowNo12').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 12)
+	{
+	    document.getElementById('RowNo13').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 13)
+	{
+	    document.getElementById('RowNo14').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 14)
+	{
+	    document.getElementById('RowNo15').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 15)
+	{
+	    document.getElementById('RowNo16').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 16)
+	{
+	    document.getElementById('RowNo17').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 17)
+	{
+	    document.getElementById('RowNo18').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 18)
+	{
+	    document.getElementById('RowNo19').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 19)
+	{
+	    document.getElementById('RowNo20').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 20)
+	{
+	    document.getElementById('RowNo21a').style.display = '';		    
+	    document.getElementById('RowNo21').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 21)
+	{
+	    document.getElementById('RowNo22').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 22)
+	{
+	    document.getElementById('RowNo23').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 23)
+	{
+	    document.getElementById('RowNo24').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 24)
+	{
+	    document.getElementById('RowNo25').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 25)
+	{
+	    document.getElementById('RowNo26').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 26)
+	{
+	    document.getElementById('RowNo27').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 27)
+	{
+	    document.getElementById('RowNo28').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 28)
+	{
+	    document.getElementById('RowNo29').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 29)
+	{
+	    document.getElementById('RowNo30').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 30)
+	{
+	    document.getElementById('RowNo31a').style.display = '';		    
+	    document.getElementById('RowNo31').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 31)
+	{
+	    document.getElementById('RowNo32').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 32)
+	{
+	    document.getElementById('RowNo33').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 33)
+	{
+	    document.getElementById('RowNo34').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 34)
+	{
+	    document.getElementById('RowNo35').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 35)
+	{
+	    document.getElementById('RowNo36').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 36)
+	{
+	    document.getElementById('RowNo37').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 37)
+	{
+	    document.getElementById('RowNo38').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 38)
+	{
+	    document.getElementById('RowNo39').style.display = '';		    
+	}
+
+	if (GoalPositionNo == 39)
+	{
+	    document.getElementById('RowNo40').style.display = '';		    
+	}
+
+
+
+
+	if (GoalPositionNo == 40)
+	{
+		GoalPositionNo =GoalPositionNo -1;
+		alert("You can only type up to 40 new Player"); 
+	}
+
+	GoalPositionNo =GoalPositionNo +1;
+}
+
+function RemoveRow()
+{
+
+	if (GoalPositionNo == 1)
+	{
+		GoalPositionNo =GoalPositionNo +1;
+		alert("At least have 1 new player"); 
+	}
+
+	if (GoalPositionNo == 2)
+	{
+		//Row2
+		document.getElementById('txtName2').value ="";
+		document.myForm.txtGrade2.value = "A";
+
+	    document.getElementById('RowNo2').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 3)
+	{
+		//Row3
+		document.getElementById('txtName3').value ="";
+		document.myForm.txtGrade3.value = "A";
+
+	    document.getElementById('RowNo3').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 4)
+	{
+		//Row4
+		document.getElementById('txtName4').value ="";
+		document.myForm.txtGrade4.value = "A";
+
+	    document.getElementById('RowNo4').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 5)
+	{
+		//Row5
+		document.getElementById('txtName5').value ="";
+		document.myForm.txtGrade5.value = "A";
+
+	    document.getElementById('RowNo5').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 6)
+	{
+		//Row6
+		document.getElementById('txtName6').value ="";
+		document.myForm.txtGrade6.value = "A";
+
+	    document.getElementById('RowNo6').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 7)
+	{
+		//Row7
+		document.getElementById('txtName7').value ="";
+		document.myForm.txtGrade7.value = "A";
+
+	    document.getElementById('RowNo7').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 8)
+	{
+		//Row8
+		document.getElementById('txtName8').value ="";
+		document.myForm.txtGrade8.value = "A";
+
+	    document.getElementById('RowNo8').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 9)
+	{
+		//Row9
+		document.getElementById('txtName9').value ="";
+		document.myForm.txtGrade9.value = "A";
+
+	    document.getElementById('RowNo9').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 10)
+	{
+		//Row10
+		document.getElementById('txtName10').value ="";
+		document.myForm.txtGrade10.value = "A";
+
+	    document.getElementById('RowNo10').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 11)
+	{
+		//Row10
+		document.getElementById('txtName11').value ="";
+		document.myForm.txtGrade11.value = "A";
+
+	    document.getElementById('RowNo11').style.display = 'none';		    
+	    document.getElementById('RowNo11a').style.display = 'none';		    
+	}
+
+
+
+	if (GoalPositionNo == 12)
+	{
+		//Row2
+		document.getElementById('txtName12').value ="";
+		document.myForm.txtGrade12.value = "A";
+
+	    document.getElementById('RowNo12').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 13)
+	{
+		//Row3
+		document.getElementById('txtName13').value ="";
+		document.myForm.txtGrade13.value = "A";
+
+	    document.getElementById('RowNo13').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 14)
+	{
+		//Row4
+		document.getElementById('txtName14').value ="";
+		document.myForm.txtGrade14.value = "A";
+
+	    document.getElementById('RowNo14').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 15)
+	{
+		//Row5
+		document.getElementById('txtName15').value ="";
+		document.myForm.txtGrade15.value = "A";
+
+	    document.getElementById('RowNo15').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 16)
+	{
+		//Row6
+		document.getElementById('txtName16').value ="";
+		document.myForm.txtGrade16.value = "A";
+
+	    document.getElementById('RowNo16').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 17)
+	{
+		//Row7
+		document.getElementById('txtName17').value ="";
+		document.myForm.txtGrade17.value = "A";
+
+	    document.getElementById('RowNo17').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 18)
+	{
+		//Row8
+		document.getElementById('txtName18').value ="";
+		document.myForm.txtGrade18.value = "A";
+
+	    document.getElementById('RowNo18').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 19)
+	{
+		//Row9
+		document.getElementById('txtName19').value ="";
+		document.myForm.txtGrade19.value = "A";
+
+	    document.getElementById('RowNo19').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 20)
+	{
+		//Row10
+		document.getElementById('txtName20').value ="";
+		document.myForm.txtGrade20.value = "A";
+
+	    document.getElementById('RowNo20').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 21)
+	{
+		//Row10
+		document.getElementById('txtName21').value ="";
+		document.myForm.txtGrade21.value = "A";
+
+	    document.getElementById('RowNo21').style.display = 'none';		    
+	    document.getElementById('RowNo21a').style.display = 'none';		    
+	}
+
+
+	if (GoalPositionNo == 22)
+	{
+		//Row2
+		document.getElementById('txtName22').value ="";
+		document.myForm.txtGrade22.value = "A";
+
+	    document.getElementById('RowNo22').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 23)
+	{
+		//Row3
+		document.getElementById('txtName23').value ="";
+		document.myForm.txtGrade23.value = "A";
+
+	    document.getElementById('RowNo23').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 24)
+	{
+		//Row4
+		document.getElementById('txtName24').value ="";
+		document.myForm.txtGrade24.value = "A";
+
+	    document.getElementById('RowNo24').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 25)
+	{
+		//Row5
+		document.getElementById('txtName25').value ="";
+		document.myForm.txtGrade25.value = "A";
+
+	    document.getElementById('RowNo25').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 26)
+	{
+		//Row6
+		document.getElementById('txtName26').value ="";
+		document.myForm.txtGrade26.value = "A";
+
+	    document.getElementById('RowNo26').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 27)
+	{
+		//Row7
+		document.getElementById('txtName27').value ="";
+		document.myForm.txtGrade27.value = "A";
+
+	    document.getElementById('RowNo27').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 28)
+	{
+		//Row8
+		document.getElementById('txtName28').value ="";
+		document.myForm.txtGrade28.value = "A";
+
+	    document.getElementById('RowNo28').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 29)
+	{
+		//Row9
+		document.getElementById('txtName29').value ="";
+		document.myForm.txtGrade29.value = "A";
+
+	    document.getElementById('RowNo29').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 30)
+	{
+		//Row10
+		document.getElementById('txtName30').value ="";
+		document.myForm.txtGrade30.value = "A";
+
+	    document.getElementById('RowNo30').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 31)
+	{
+		//Row10
+		document.getElementById('txtName31').value ="";
+		document.myForm.txtGrade31.value = "A";
+
+	    document.getElementById('RowNo31').style.display = 'none';		    
+	    document.getElementById('RowNo31a').style.display = 'none';		    
+	}
+
+
+	if (GoalPositionNo == 32)
+	{
+		//Row2
+		document.getElementById('txtName32').value ="";
+		document.myForm.txtGrade32.value = "A";
+
+	    document.getElementById('RowNo32').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 33)
+	{
+		//Row3
+		document.getElementById('txtName33').value ="";
+		document.myForm.txtGrade33.value = "A";
+
+	    document.getElementById('RowNo33').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 34)
+	{
+		//Row4
+		document.getElementById('txtName34').value ="";
+		document.myForm.txtGrade34.value = "A";
+
+	    document.getElementById('RowNo34').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 35)
+	{
+		//Row5
+		document.getElementById('txtName35').value ="";
+		document.myForm.txtGrade35.value = "A";
+
+	    document.getElementById('RowNo35').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 36)
+	{
+		//Row6
+		document.getElementById('txtName36').value ="";
+		document.myForm.txtGrade36.value = "A";
+
+	    document.getElementById('RowNo36').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 37)
+	{
+		//Row7
+		document.getElementById('txtName37').value ="";
+		document.myForm.txtGrade37.value = "A";
+
+	    document.getElementById('RowNo37').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 38)
+	{
+		//Row8
+		document.getElementById('txtName38').value ="";
+		document.myForm.txtGrade38.value = "A";
+
+	    document.getElementById('RowNo38').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 39)
+	{
+		//Row9
+		document.getElementById('txtName39').value ="";
+		document.myForm.txtGrade39.value = "A";
+
+	    document.getElementById('RowNo39').style.display = 'none';		    
+	}
+
+	if (GoalPositionNo == 40)
+	{
+		//Row10
+		document.getElementById('txtName40').value ="";
+		document.myForm.txtGrade40.value = "A";
+
+	    document.getElementById('RowNo40').style.display = 'none';		    
+	}
+
+	CheckSummary();
+
+	GoalPositionNo =GoalPositionNo -1;
+}
+
+
+function AllPlayerDisapper()
+{
+	document.getElementById('RowNo2').style.display = 'none';  
+	document.getElementById('RowNo3').style.display = 'none';  
+	document.getElementById('RowNo4').style.display = 'none';  
+	document.getElementById('RowNo5').style.display = 'none';  
+	document.getElementById('RowNo6').style.display = 'none';  
+	document.getElementById('RowNo7').style.display = 'none';  
+	document.getElementById('RowNo8').style.display = 'none';  
+	document.getElementById('RowNo9').style.display = 'none';  
+	document.getElementById('RowNo10').style.display = 'none';  
+
+	document.getElementById('RowNo11a').style.display = 'none';  
+	document.getElementById('RowNo11').style.display = 'none';  
+	document.getElementById('RowNo12').style.display = 'none';  
+	document.getElementById('RowNo13').style.display = 'none';  
+	document.getElementById('RowNo14').style.display = 'none';  
+	document.getElementById('RowNo15').style.display = 'none';  
+	document.getElementById('RowNo16').style.display = 'none';  
+	document.getElementById('RowNo17').style.display = 'none';  
+	document.getElementById('RowNo18').style.display = 'none';  
+	document.getElementById('RowNo19').style.display = 'none';  
+	document.getElementById('RowNo20').style.display = 'none';  
+
+	document.getElementById('RowNo21a').style.display = 'none';  
+	document.getElementById('RowNo21').style.display = 'none';  
+	document.getElementById('RowNo22').style.display = 'none';  
+	document.getElementById('RowNo23').style.display = 'none';  
+	document.getElementById('RowNo24').style.display = 'none';  
+	document.getElementById('RowNo25').style.display = 'none';  
+	document.getElementById('RowNo26').style.display = 'none';  
+	document.getElementById('RowNo27').style.display = 'none';  
+	document.getElementById('RowNo28').style.display = 'none';  
+	document.getElementById('RowNo29').style.display = 'none';  
+	document.getElementById('RowNo30').style.display = 'none';  
+
+	document.getElementById('RowNo31a').style.display = 'none';  
+	document.getElementById('RowNo31').style.display = 'none';  
+	document.getElementById('RowNo32').style.display = 'none';  
+	document.getElementById('RowNo33').style.display = 'none';  
+	document.getElementById('RowNo34').style.display = 'none';  
+	document.getElementById('RowNo35').style.display = 'none';  
+	document.getElementById('RowNo36').style.display = 'none';  
+	document.getElementById('RowNo37').style.display = 'none';  
+	document.getElementById('RowNo38').style.display = 'none';  
+	document.getElementById('RowNo39').style.display = 'none';  
+	document.getElementById('RowNo40').style.display = 'none';  
+
+}
+function AllDisapear()
+{
+
+	document.getElementById('Row00').style.display = 'none';  
+	document.getElementById('Row000').style.display = 'none';  
+	document.getElementById('Row1').style.display = 'none';  
+	document.getElementById('Row2').style.display = 'none';  
+	document.getElementById('Row3').style.display = 'none';  
+	document.getElementById('Row4').style.display = 'none';  
+	document.getElementById('Row5').style.display = 'none';  
+	document.getElementById('Row6').style.display = 'none';  
+	document.getElementById('Row7').style.display = 'none';  
+	document.getElementById('Row8').style.display = 'none';  
+	document.getElementById('Row9').style.display = 'none';  
+	document.getElementById('Row10').style.display = 'none';  
+	document.getElementById('Row11').style.display = 'none';  
+	document.getElementById('Row12').style.display = 'none';  
+
+	
+	
+	
+}
+
+function ClickSaveButton()
+{
+	var a;
+	a = CheckCourt();
+	
+	if (a == true)
+	{	
+		AllDisapear();
+		displayResultRow();
+		AddIntoarray();
+	}
+}
+
+function displayResultRow()
+{
+	document.getElementById('Row00').style.display = '';  
+	document.getElementById('Row000').style.display = '';  
+
+	var _total1;
+	_total1 =0;
+	_total1 = parseInt(document.getElementById('txtCourtA').value) +  parseInt(document.getElementById('txtCourtB').value) +  parseInt(document.getElementById('txtCourtC').value) +  parseInt(document.getElementById('txtCourtD').value);
+	if (_total1 ==1)
+	{
+	
+		document.getElementById('Row1').style.display = '';  
+	
+	}
+
+
+	if (_total1 ==2)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+	
+	}
+
+	if (_total1 ==3)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+	}
+
+	if (_total1 ==4)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+ 
+	
+	}
+
+	if (_total1 ==5)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+	
+	}
+
+	if (_total1 ==6)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+		document.getElementById('Row6').style.display = '';  
+	
+	}
+
+	if (_total1 ==7)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+		document.getElementById('Row6').style.display = '';  
+		document.getElementById('Row7').style.display = '';  
+  
+	
+	}
+
+	if (_total1 ==8)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+		document.getElementById('Row6').style.display = '';  
+		document.getElementById('Row7').style.display = '';  
+		document.getElementById('Row8').style.display = '';  
+  
+	
+	}
+
+	if (_total1 ==9)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+		document.getElementById('Row6').style.display = '';  
+		document.getElementById('Row7').style.display = '';  
+		document.getElementById('Row8').style.display = ''; 
+		document.getElementById('Row9').style.display = '';  
+	
+	}
+
+	if (_total1 ==10)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+		document.getElementById('Row6').style.display = '';  
+		document.getElementById('Row7').style.display = '';  
+		document.getElementById('Row8').style.display = ''; 
+		document.getElementById('Row9').style.display = '';  
+		document.getElementById('Row10').style.display = '';  
+ 
+	
+	}
+
+	if (_total1 ==11)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+		document.getElementById('Row6').style.display = '';  
+		document.getElementById('Row7').style.display = '';  
+		document.getElementById('Row8').style.display = ''; 
+		document.getElementById('Row9').style.display = '';  
+		document.getElementById('Row10').style.display = '';
+		document.getElementById('Row11').style.display = '';  
+ 
+	
+	}
+
+	if (_total1 ==12)
+	{
+		document.getElementById('Row1').style.display = '';  
+		document.getElementById('Row2').style.display = '';  
+		document.getElementById('Row3').style.display = '';  
+		document.getElementById('Row4').style.display = '';  
+		document.getElementById('Row5').style.display = '';  
+		document.getElementById('Row6').style.display = '';  
+		document.getElementById('Row7').style.display = '';  
+		document.getElementById('Row8').style.display = ''; 
+		document.getElementById('Row9').style.display = '';  
+		document.getElementById('Row10').style.display = '';
+		document.getElementById('Row11').style.display = '';  
+ 
+  
+		document.getElementById('Row12').style.display = '';  
+	
+	}
+
+}
+
+function AddIntoarray()
+{
+	//set array to empty first
+	arrA.length =0;
+	arrB.length =0;
+	arrC.length =0;
+	arrD.length =0;
+ 
+	// append new value to the array
+	//arrA.push("Hola");
+	//arrA.push("Robby");
+	//arrA.push("Susi");
+
+
+	if (document.getElementById('txtName1').value.length > 0)
+	{
+		if (document.myForm.txtGrade1.value == "A")
+		{
+			arrA.push(document.getElementById('txtName1').value);
+		}
+		if (document.myForm.txtGrade1.value == "B")
+		{
+			arrB.push(document.getElementById('txtName1').value);
+		}
+		if (document.myForm.txtGrade1.value == "C")
+		{
+			arrC.push(document.getElementById('txtName1').value);
+		}
+		if (document.myForm.txtGrade1.value == "D")
+		{
+			arrD.push(document.getElementById('txtName1').value);
+		}
+	}
+
+	if (document.getElementById('txtName2').value.length > 0)
+	{
+		if (document.myForm.txtGrade2.value == "A")
+		{
+			arrA.push(document.getElementById('txtName2').value);
+		}
+		if (document.myForm.txtGrade2.value == "B")
+		{
+			arrB.push(document.getElementById('txtName2').value);
+
+		}
+		if (document.myForm.txtGrade2.value == "C")
+		{
+			arrC.push(document.getElementById('txtName2').value);
+
+		}
+		if (document.myForm.txtGrade2.value == "D")
+		{
+			arrD.push(document.getElementById('txtName2').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName3').value.length > 0)
+	{
+		if (document.myForm.txtGrade3.value == "A")
+		{
+			arrA.push(document.getElementById('txtName3').value);
+
+		}
+		if (document.myForm.txtGrade3.value == "B")
+		{
+			arrB.push(document.getElementById('txtName3').value);
+
+		}
+		if (document.myForm.txtGrade3.value == "C")
+		{
+			arrC.push(document.getElementById('txtName3').value);
+
+		}
+		if (document.myForm.txtGrade3.value == "D")
+		{
+			arrD.push(document.getElementById('txtName3').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName4').value.length > 0)
+	{
+		if (document.myForm.txtGrade4.value == "A")
+		{
+			arrA.push(document.getElementById('txtName4').value);
+
+		}
+		if (document.myForm.txtGrade4.value == "B")
+		{
+			arrB.push(document.getElementById('txtName4').value);
+
+		}
+		if (document.myForm.txtGrade4.value == "C")
+		{
+			arrC.push(document.getElementById('txtName4').value);
+
+		}
+		if (document.myForm.txtGrade4.value == "D")
+		{
+			arrD.push(document.getElementById('txtName4').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName5').value.length > 0)
+	{
+		if (document.myForm.txtGrade5.value == "A")
+		{
+			arrA.push(document.getElementById('txtName5').value);
+
+		}
+		if (document.myForm.txtGrade5.value == "B")
+		{
+			arrB.push(document.getElementById('txtName5').value);
+
+		}
+		if (document.myForm.txtGrade5.value == "C")
+		{
+			arrC.push(document.getElementById('txtName5').value);
+
+		}
+		if (document.myForm.txtGrade5.value == "D")
+		{
+			arrD.push(document.getElementById('txtName5').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName6').value.length > 0)
+	{
+		if (document.myForm.txtGrade6.value == "A")
+		{
+			arrA.push(document.getElementById('txtName6').value);
+
+		}
+		if (document.myForm.txtGrade6.value == "B")
+		{
+			arrB.push(document.getElementById('txtName6').value);
+
+		}
+		if (document.myForm.txtGrade6.value == "C")
+		{
+			arrC.push(document.getElementById('txtName6').value);
+
+		}
+		if (document.myForm.txtGrade6.value == "D")
+		{
+			arrD.push(document.getElementById('txtName6').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName7').value.length > 0)
+	{
+		if (document.myForm.txtGrade7.value == "A")
+		{
+			arrA.push(document.getElementById('txtName7').value);
+
+		}
+		if (document.myForm.txtGrade7.value == "B")
+		{
+			arrB.push(document.getElementById('txtName7').value);
+
+		}
+		if (document.myForm.txtGrade7.value == "C")
+		{
+			arrC.push(document.getElementById('txtName7').value);
+
+		}
+		if (document.myForm.txtGrade7.value == "D")
+		{
+			arrD.push(document.getElementById('txtName7').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName8').value.length > 0)
+	{
+		if (document.myForm.txtGrade8.value == "A")
+		{
+			arrA.push(document.getElementById('txtName8').value);
+
+		}
+		if (document.myForm.txtGrade8.value == "B")
+		{
+			arrB.push(document.getElementById('txtName8').value);
+
+		}
+		if (document.myForm.txtGrade8.value == "C")
+		{
+			arrC.push(document.getElementById('txtName8').value);
+
+		}
+		if (document.myForm.txtGrade8.value == "D")
+		{
+			arrD.push(document.getElementById('txtName8').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName9').value.length > 0)
+	{
+		if (document.myForm.txtGrade9.value == "A")
+		{
+			arrA.push(document.getElementById('txtName9').value);
+
+		}
+		if (document.myForm.txtGrade9.value == "B")
+		{
+			arrB.push(document.getElementById('txtName9').value);
+
+		}
+		if (document.myForm.txtGrade9.value == "C")
+		{
+			arrC.push(document.getElementById('txtName9').value);
+
+		}
+		if (document.myForm.txtGrade9.value == "D")
+		{
+			arrD.push(document.getElementById('txtName9').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName10').value.length > 0)
+	{
+		if (document.myForm.txtGrade10.value == "A")
+		{
+			arrA.push(document.getElementById('txtName10').value);
+
+		}
+		if (document.myForm.txtGrade10.value == "B")
+		{
+			arrB.push(document.getElementById('txtName10').value);
+
+		}
+		if (document.myForm.txtGrade10.value == "C")
+		{
+			arrC.push(document.getElementById('txtName10').value);
+
+		}
+		if (document.myForm.txtGrade10.value == "D")
+		{
+			arrD.push(document.getElementById('txtName10').value);
+
+		}
+	}	
+	
+	
+		if (document.getElementById('txtName11').value.length > 0)
+	{
+		if (document.myForm.txtGrade11.value == "A")
+		{
+			arrA.push(document.getElementById('txtName11').value);
+
+		}
+		if (document.myForm.txtGrade11.value == "B")
+		{
+			arrB.push(document.getElementById('txtName11').value);
+
+		}
+		if (document.myForm.txtGrade11.value == "C")
+		{
+			arrC.push(document.getElementById('txtName11').value);
+
+		}
+		if (document.myForm.txtGrade11.value == "D")
+		{
+			arrD.push(document.getElementById('txtName11').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName12').value.length > 0)
+	{
+		if (document.myForm.txtGrade12.value == "A")
+		{
+			arrA.push(document.getElementById('txtName12').value);
+
+		}
+		if (document.myForm.txtGrade12.value == "B")
+		{
+			arrB.push(document.getElementById('txtName12').value);
+
+		}
+		if (document.myForm.txtGrade12.value == "C")
+		{
+			arrC.push(document.getElementById('txtName12').value);
+
+		}
+		if (document.myForm.txtGrade12.value == "D")
+		{
+			arrD.push(document.getElementById('txtName12').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName13').value.length > 0)
+	{
+		if (document.myForm.txtGrade13.value == "A")
+		{
+			arrA.push(document.getElementById('txtName13').value);
+
+		}
+		if (document.myForm.txtGrade13.value == "B")
+		{
+			arrB.push(document.getElementById('txtName13').value);
+
+		}
+		if (document.myForm.txtGrade13.value == "C")
+		{
+			arrC.push(document.getElementById('txtName13').value);
+
+		}
+		if (document.myForm.txtGrade13.value == "D")
+		{
+			arrD.push(document.getElementById('txtName13').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName14').value.length > 0)
+	{
+		if (document.myForm.txtGrade14.value == "A")
+		{
+			arrA.push(document.getElementById('txtName14').value);
+
+		}
+		if (document.myForm.txtGrade14.value == "B")
+		{
+			arrB.push(document.getElementById('txtName14').value);
+
+		}
+		if (document.myForm.txtGrade14.value == "C")
+		{
+			arrC.push(document.getElementById('txtName14').value);
+
+		}
+		if (document.myForm.txtGrade14.value == "D")
+		{
+			arrD.push(document.getElementById('txtName14').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName15').value.length > 0)
+	{
+		if (document.myForm.txtGrade15.value == "A")
+		{
+			arrA.push(document.getElementById('txtName15').value);
+
+		}
+		if (document.myForm.txtGrade15.value == "B")
+		{
+			arrB.push(document.getElementById('txtName15').value);
+
+		}
+		if (document.myForm.txtGrade15.value == "C")
+		{
+			arrC.push(document.getElementById('txtName15').value);
+
+		}
+		if (document.myForm.txtGrade15.value == "D")
+		{
+			arrD.push(document.getElementById('txtName15').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName16').value.length > 0)
+	{
+		if (document.myForm.txtGrade16.value == "A")
+		{
+			arrA.push(document.getElementById('txtName16').value);
+
+		}
+		if (document.myForm.txtGrade16.value == "B")
+		{
+			arrB.push(document.getElementById('txtName16').value);
+
+		}
+		if (document.myForm.txtGrade16.value == "C")
+		{
+			arrC.push(document.getElementById('txtName16').value);
+
+		}
+		if (document.myForm.txtGrade16.value == "D")
+		{
+			arrD.push(document.getElementById('txtName16').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName17').value.length > 0)
+	{
+		if (document.myForm.txtGrade17.value == "A")
+		{
+			arrA.push(document.getElementById('txtName17').value);
+
+		}
+		if (document.myForm.txtGrade17.value == "B")
+		{
+			arrB.push(document.getElementById('txtName17').value);
+
+		}
+		if (document.myForm.txtGrade17.value == "C")
+		{
+			arrC.push(document.getElementById('txtName17').value);
+
+		}
+		if (document.myForm.txtGrade17.value == "D")
+		{
+			arrD.push(document.getElementById('txtName17').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName18').value.length > 0)
+	{
+		if (document.myForm.txtGrade18.value == "A")
+		{
+			arrA.push(document.getElementById('txtName18').value);
+
+		}
+		if (document.myForm.txtGrade18.value == "B")
+		{
+			arrB.push(document.getElementById('txtName18').value);
+
+		}
+		if (document.myForm.txtGrade18.value == "C")
+		{
+			arrC.push(document.getElementById('txtName18').value);
+
+		}
+		if (document.myForm.txtGrade18.value == "D")
+		{
+			arrD.push(document.getElementById('txtName18').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName19').value.length > 0)
+	{
+		if (document.myForm.txtGrade19.value == "A")
+		{
+			arrA.push(document.getElementById('txtName19').value);
+
+		}
+		if (document.myForm.txtGrade19.value == "B")
+		{
+			arrB.push(document.getElementById('txtName19').value);
+
+		}
+		if (document.myForm.txtGrade19.value == "C")
+		{
+			arrC.push(document.getElementById('txtName19').value);
+
+		}
+		if (document.myForm.txtGrade19.value == "D")
+		{
+			arrD.push(document.getElementById('txtName19').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName20').value.length > 0)
+	{
+		if (document.myForm.txtGrade20.value == "A")
+		{
+			arrA.push(document.getElementById('txtName20').value);
+
+		}
+		if (document.myForm.txtGrade20.value == "B")
+		{
+			arrB.push(document.getElementById('txtName20').value);
+
+		}
+		if (document.myForm.txtGrade20.value == "C")
+		{
+			arrC.push(document.getElementById('txtName20').value);
+
+		}
+		if (document.myForm.txtGrade20.value == "D")
+		{
+			arrD.push(document.getElementById('txtName20').value);
+
+		}
+	}	
+
+
+
+
+
+	if (document.getElementById('txtName21').value.length > 0)
+	{
+		if (document.myForm.txtGrade21.value == "A")
+		{
+			arrA.push(document.getElementById('txtName21').value);
+
+		}
+		if (document.myForm.txtGrade21.value == "B")
+		{
+			arrB.push(document.getElementById('txtName21').value);
+
+		}
+		if (document.myForm.txtGrade21.value == "C")
+		{
+			arrC.push(document.getElementById('txtName21').value);
+
+		}
+		if (document.myForm.txtGrade21.value == "D")
+		{
+			arrD.push(document.getElementById('txtName21').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName22').value.length > 0)
+	{
+		if (document.myForm.txtGrade22.value == "A")
+		{
+			arrA.push(document.getElementById('txtName22').value);
+
+		}
+		if (document.myForm.txtGrade22.value == "B")
+		{
+			arrB.push(document.getElementById('txtName22').value);
+
+		}
+		if (document.myForm.txtGrade22.value == "C")
+		{
+			arrC.push(document.getElementById('txtName22').value);
+
+		}
+		if (document.myForm.txtGrade22.value == "D")
+		{
+			arrD.push(document.getElementById('txtName22').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName23').value.length > 0)
+	{
+		if (document.myForm.txtGrade23.value == "A")
+		{
+			arrA.push(document.getElementById('txtName23').value);
+
+		}
+		if (document.myForm.txtGrade23.value == "B")
+		{
+			arrB.push(document.getElementById('txtName23').value);
+
+		}
+		if (document.myForm.txtGrade23.value == "C")
+		{
+			arrC.push(document.getElementById('txtName23').value);
+
+		}
+		if (document.myForm.txtGrade23.value == "D")
+		{
+			arrD.push(document.getElementById('txtName23').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName24').value.length > 0)
+	{
+		if (document.myForm.txtGrade24.value == "A")
+		{
+			arrA.push(document.getElementById('txtName24').value);
+
+		}
+		if (document.myForm.txtGrade24.value == "B")
+		{
+			arrB.push(document.getElementById('txtName24').value);
+
+		}
+		if (document.myForm.txtGrade24.value == "C")
+		{
+			arrC.push(document.getElementById('txtName24').value);
+
+		}
+		if (document.myForm.txtGrade24.value == "D")
+		{
+			arrD.push(document.getElementById('txtName24').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName25').value.length > 0)
+	{
+		if (document.myForm.txtGrade25.value == "A")
+		{
+			arrA.push(document.getElementById('txtName25').value);
+
+		}
+		if (document.myForm.txtGrade25.value == "B")
+		{
+			arrB.push(document.getElementById('txtName25').value);
+
+		}
+		if (document.myForm.txtGrade25.value == "C")
+		{
+			arrC.push(document.getElementById('txtName25').value);
+
+		}
+		if (document.myForm.txtGrade25.value == "D")
+		{
+			arrD.push(document.getElementById('txtName25').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName26').value.length > 0)
+	{
+		if (document.myForm.txtGrade26.value == "A")
+		{
+			arrA.push(document.getElementById('txtName26').value);
+
+		}
+		if (document.myForm.txtGrade26.value == "B")
+		{
+			arrB.push(document.getElementById('txtName26').value);
+
+		}
+		if (document.myForm.txtGrade26.value == "C")
+		{
+			arrC.push(document.getElementById('txtName26').value);
+
+		}
+		if (document.myForm.txtGrade26.value == "D")
+		{
+			arrD.push(document.getElementById('txtName26').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName27').value.length > 0)
+	{
+		if (document.myForm.txtGrade27.value == "A")
+		{
+			arrA.push(document.getElementById('txtName27').value);
+
+		}
+		if (document.myForm.txtGrade27.value == "B")
+		{
+			arrB.push(document.getElementById('txtName27').value);
+
+		}
+		if (document.myForm.txtGrade27.value == "C")
+		{
+			arrC.push(document.getElementById('txtName27').value);
+
+		}
+		if (document.myForm.txtGrade27.value == "D")
+		{
+			arrD.push(document.getElementById('txtName27').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName28').value.length > 0)
+	{
+		if (document.myForm.txtGrade28.value == "A")
+		{
+			arrA.push(document.getElementById('txtName28').value);
+
+		}
+		if (document.myForm.txtGrade28.value == "B")
+		{
+			arrB.push(document.getElementById('txtName28').value);
+
+		}
+		if (document.myForm.txtGrade28.value == "C")
+		{
+			arrC.push(document.getElementById('txtName28').value);
+
+		}
+		if (document.myForm.txtGrade28.value == "D")
+		{
+			arrD.push(document.getElementById('txtName28').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName29').value.length > 0)
+	{
+		if (document.myForm.txtGrade29.value == "A")
+		{
+			arrA.push(document.getElementById('txtName29').value);
+
+		}
+		if (document.myForm.txtGrade29.value == "B")
+		{
+			arrB.push(document.getElementById('txtName29').value);
+
+		}
+		if (document.myForm.txtGrade29.value == "C")
+		{
+			arrC.push(document.getElementById('txtName29').value);
+
+		}
+		if (document.myForm.txtGrade29.value == "D")
+		{
+			arrD.push(document.getElementById('txtName29').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName30').value.length > 0)
+	{
+		if (document.myForm.txtGrade30.value == "A")
+		{
+			arrA.push(document.getElementById('txtName30').value);
+
+		}
+		if (document.myForm.txtGrade30.value == "B")
+		{
+			arrB.push(document.getElementById('txtName30').value);
+
+		}
+		if (document.myForm.txtGrade30.value == "C")
+		{
+			arrC.push(document.getElementById('txtName30').value);
+
+		}
+		if (document.myForm.txtGrade30.value == "D")
+		{
+			arrD.push(document.getElementById('txtName30').value);
+
+		}
+	}	
+
+
+
+
+
+
+
+
+	if (document.getElementById('txtName31').value.length > 0)
+	{
+		if (document.myForm.txtGrade31.value == "A")
+		{
+			arrA.push(document.getElementById('txtName31').value);
+
+		}
+		if (document.myForm.txtGrade31.value == "B")
+		{
+			arrB.push(document.getElementById('txtName31').value);
+
+		}
+		if (document.myForm.txtGrade31.value == "C")
+		{
+			arrC.push(document.getElementById('txtName31').value);
+
+		}
+		if (document.myForm.txtGrade31.value == "D")
+		{
+			arrD.push(document.getElementById('txtName31').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName32').value.length > 0)
+	{
+		if (document.myForm.txtGrade32.value == "A")
+		{
+			arrA.push(document.getElementById('txtName32').value);
+
+		}
+		if (document.myForm.txtGrade32.value == "B")
+		{
+			arrB.push(document.getElementById('txtName32').value);
+
+		}
+		if (document.myForm.txtGrade32.value == "C")
+		{
+			arrC.push(document.getElementById('txtName32').value);
+
+		}
+		if (document.myForm.txtGrade32.value == "D")
+		{
+			arrD.push(document.getElementById('txtName32').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName33').value.length > 0)
+	{
+		if (document.myForm.txtGrade33.value == "A")
+		{
+			arrA.push(document.getElementById('txtName33').value);
+
+		}
+		if (document.myForm.txtGrade33.value == "B")
+		{
+			arrB.push(document.getElementById('txtName33').value);
+
+		}
+		if (document.myForm.txtGrade33.value == "C")
+		{
+			arrC.push(document.getElementById('txtName33').value);
+
+		}
+		if (document.myForm.txtGrade33.value == "D")
+		{
+			arrD.push(document.getElementById('txtName33').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName34').value.length > 0)
+	{
+		if (document.myForm.txtGrade34.value == "A")
+		{
+			arrA.push(document.getElementById('txtName34').value);
+
+		}
+		if (document.myForm.txtGrade34.value == "B")
+		{
+			arrB.push(document.getElementById('txtName34').value);
+
+		}
+		if (document.myForm.txtGrade34.value == "C")
+		{
+			arrC.push(document.getElementById('txtName34').value);
+
+		}
+		if (document.myForm.txtGrade34.value == "D")
+		{
+			arrD.push(document.getElementById('txtName34').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName35').value.length > 0)
+	{
+		if (document.myForm.txtGrade35.value == "A")
+		{
+			arrA.push(document.getElementById('txtName35').value);
+
+		}
+		if (document.myForm.txtGrade35.value == "B")
+		{
+			arrB.push(document.getElementById('txtName35').value);
+
+		}
+		if (document.myForm.txtGrade35.value == "C")
+		{
+			arrC.push(document.getElementById('txtName35').value);
+
+		}
+		if (document.myForm.txtGrade35.value == "D")
+		{
+			arrD.push(document.getElementById('txtName35').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName36').value.length > 0)
+	{
+		if (document.myForm.txtGrade36.value == "A")
+		{
+			arrA.push(document.getElementById('txtName36').value);
+
+		}
+		if (document.myForm.txtGrade36.value == "B")
+		{
+			arrB.push(document.getElementById('txtName36').value);
+
+		}
+		if (document.myForm.txtGrade36.value == "C")
+		{
+			arrC.push(document.getElementById('txtName36').value);
+
+		}
+		if (document.myForm.txtGrade36.value == "D")
+		{
+			arrD.push(document.getElementById('txtName36').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName37').value.length > 0)
+	{
+		if (document.myForm.txtGrade37.value == "A")
+		{
+			arrA.push(document.getElementById('txtName37').value);
+
+		}
+		if (document.myForm.txtGrade37.value == "B")
+		{
+			arrB.push(document.getElementById('txtName37').value);
+
+		}
+		if (document.myForm.txtGrade37.value == "C")
+		{
+			arrC.push(document.getElementById('txtName37').value);
+
+		}
+		if (document.myForm.txtGrade37.value == "D")
+		{
+			arrD.push(document.getElementById('txtName37').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName38').value.length > 0)
+	{
+		if (document.myForm.txtGrade38.value == "A")
+		{
+			arrA.push(document.getElementById('txtName38').value);
+
+		}
+		if (document.myForm.txtGrade38.value == "B")
+		{
+			arrB.push(document.getElementById('txtName38').value);
+
+		}
+		if (document.myForm.txtGrade38.value == "C")
+		{
+			arrC.push(document.getElementById('txtName38').value);
+
+		}
+		if (document.myForm.txtGrade38.value == "D")
+		{
+			arrD.push(document.getElementById('txtName38').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName39').value.length > 0)
+	{
+		if (document.myForm.txtGrade39.value == "A")
+		{
+			arrA.push(document.getElementById('txtName39').value);
+
+		}
+		if (document.myForm.txtGrade39.value == "B")
+		{
+			arrB.push(document.getElementById('txtName39').value);
+
+		}
+		if (document.myForm.txtGrade39.value == "C")
+		{
+			arrC.push(document.getElementById('txtName39').value);
+
+		}
+		if (document.myForm.txtGrade39.value == "D")
+		{
+			arrD.push(document.getElementById('txtName39').value);
+
+		}
+	}
+
+	if (document.getElementById('txtName40').value.length > 0)
+	{
+		if (document.myForm.txtGrade40.value == "A")
+		{
+			arrA.push(document.getElementById('txtName40').value);
+
+		}
+		if (document.myForm.txtGrade40.value == "B")
+		{
+			arrB.push(document.getElementById('txtName40').value);
+
+		}
+		if (document.myForm.txtGrade40.value == "C")
+		{
+			arrC.push(document.getElementById('txtName40').value);
+
+		}
+		if (document.myForm.txtGrade40.value == "D")
+		{
+			arrD.push(document.getElementById('txtName40').value);
+
+		}
+	}	
+
+	CalculateArray();
+}
+
+function CalculateArray()
+{
+	InitSETNullGrade();
+	
+	var _totCourt1;
+	_totCourt1= 1;
+	var j;
+	j=1;
+	var _pos =1;
+		
+
+
+	//RANDOM BEGIN	
+	if  (arrA.length > 0)
+	{
+		arrA.randomize();
+
+		//if court =1	
+			// display all values
+			for (var i = 0; i < arrA.length; i++) 
+			{
+		
+				if(parseInt(document.getElementById('txtCourtA').value) == _pos)
+				{
+					if (_totCourt1 < (4 *_pos) )
+					{
+						document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrA[i] + ", ";
+					}
+					else
+					{
+						if (_totCourt1 == (4 * _pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrA[i];
+							document.getElementById('txtCourtGrades' + j).value = "A";
+							j=j+1;
+							_pos =_pos+1;
+					
+						}
+					}
+					
+					_totCourt1=_totCourt1+1;
+				
+				}
+				else
+				{
+					if(parseInt(document.getElementById('txtCourtA').value) > _pos)
+					{
+						if (_totCourt1 < (4 *_pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrA[i] + ", ";
+						}
+						else
+						{
+							if (_totCourt1 == (4 * _pos) )
+							{
+								document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrA[i];
+								document.getElementById('txtCourtGrades' + j).value = "A";
+								j=j+1;
+								_pos =_pos+1;
+						
+							}
+						}
+						
+						_totCourt1=_totCourt1+1;
+					}
+				}							
+			}
+	}
+
+
+	//repeat for GRADE B again
+	_totCourt1= 1;
+
+	var _pos =1;
+
+	if  (arrB.length > 0)
+	{
+		arrB.randomize();
+
+		//if court =1	
+			// display all values
+			for (var i = 0; i < arrB.length; i++) 
+			{
+		
+				if(parseInt(document.getElementById('txtCourtB').value) == _pos)
+				{
+					if (_totCourt1 < (4 *_pos) )
+					{
+						document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrB[i] + ", ";
+					}
+					else
+					{
+						if (_totCourt1 == (4 * _pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrB[i];
+							document.getElementById('txtCourtGrades' + j).value = "B";
+							j=j+1;
+							_pos =_pos+1;
+					
+						}
+					}
+					
+					_totCourt1=_totCourt1+1;
+				
+				}
+				else
+				{
+					if(parseInt(document.getElementById('txtCourtB').value) > _pos)
+					{
+						if (_totCourt1 < (4 *_pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrB[i] + ", ";
+						}
+						else
+						{
+							if (_totCourt1 == (4 * _pos) )
+							{
+								document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrB[i];
+								document.getElementById('txtCourtGrades' + j).value = "B";
+
+								j=j+1;
+								_pos =_pos+1;
+						
+							}
+						}
+						
+						_totCourt1=_totCourt1+1;
+					}
+				}							
+			}
+		}
+
+
+
+
+
+	//repeat for GRADE C again
+	_totCourt1= 1;
+
+	var _pos =1;
+
+	if  (arrC.length > 0)
+	{
+		arrC.randomize();
+
+		//if court =1	
+			// display all values
+			for (var i = 0; i < arrC.length; i++) 
+			{
+		
+				if(parseInt(document.getElementById('txtCourtC').value) == _pos)
+				{
+					if (_totCourt1 < (4 *_pos) )
+					{
+						document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrC[i] + ", ";
+					}
+					else
+					{
+						if (_totCourt1 == (4 * _pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrC[i];
+							document.getElementById('txtCourtGrades' + j).value = "C";
+							j=j+1;
+							_pos =_pos+1;
+					
+						}
+					}
+					
+					_totCourt1=_totCourt1+1;
+				
+				}
+				else
+				{
+					if(parseInt(document.getElementById('txtCourtC').value) > _pos)
+					{
+						if (_totCourt1 < (4 *_pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrC[i] + ", ";
+						}
+						else
+						{
+							if (_totCourt1 == (4 * _pos) )
+							{
+								document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrC[i];
+								document.getElementById('txtCourtGrades' + j).value = "C";
+
+								j=j+1;
+								_pos =_pos+1;
+						
+							}
+						}
+						
+						_totCourt1=_totCourt1+1;
+					}
+				}							
+			}
+		}
+		
+		
+		
+
+	//repeat for GRADE D again
+	_totCourt1= 1;
+
+	var _pos =1;
+
+	if  (arrD.length > 0)
+	{
+		arrD.randomize();
+
+		//if court =1	
+			// display all values
+			for (var i = 0; i < arrD.length; i++) 
+			{
+		
+				if(parseInt(document.getElementById('txtCourtD').value) == _pos)
+				{
+					if (_totCourt1 < (4 *_pos) )
+					{
+						document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrD[i] + ", ";
+					}
+					else
+					{
+						if (_totCourt1 == (4 * _pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrD[i];
+							document.getElementById('txtCourtGrades' + j).value = "D";
+							j=j+1;
+							_pos =_pos+1;
+					
+						}
+					}
+					
+					_totCourt1=_totCourt1+1;
+				
+				}
+				else
+				{
+					if(parseInt(document.getElementById('txtCourtD').value) > _pos)
+					{
+						if (_totCourt1 < (4 *_pos) )
+						{
+							document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrD[i] + ", ";
+						}
+						else
+						{
+							if (_totCourt1 == (4 * _pos) )
+							{
+								document.getElementById('txtPlayerResult' + j).value = document.getElementById('txtPlayerResult' + j).value +  arrD[i];
+								document.getElementById('txtCourtGrades' + j).value = "D";
+
+								j=j+1;
+								_pos =_pos+1;
+						
+							}
+						}
+						
+						_totCourt1=_totCourt1+1;
+					}
+				}							
+			}
+		}
+		
+
+}
+
+function InitSETNullGrade()
+{
+	document.getElementById('txtPlayerResult1').value =" ";
+	document.getElementById('txtPlayerResult2').value =" ";
+	document.getElementById('txtPlayerResult3').value =" ";
+	document.getElementById('txtPlayerResult4').value =" ";
+	document.getElementById('txtPlayerResult5').value =" ";
+	document.getElementById('txtPlayerResult6').value =" ";
+	document.getElementById('txtPlayerResult7').value =" ";
+	document.getElementById('txtPlayerResult8').value =" ";
+	document.getElementById('txtPlayerResult9').value =" ";
+	document.getElementById('txtPlayerResult10').value =" ";
+	document.getElementById('txtPlayerResult11').value =" ";
+	document.getElementById('txtPlayerResult12').value =" ";
+	document.getElementById('txtCourtGrades1').value ="";
+	document.getElementById('txtCourtGrades2').value ="";
+	document.getElementById('txtCourtGrades3').value ="";
+	document.getElementById('txtCourtGrades4').value ="";
+	document.getElementById('txtCourtGrades5').value ="";
+	document.getElementById('txtCourtGrades6').value ="";
+	document.getElementById('txtCourtGrades7').value ="";
+	document.getElementById('txtCourtGrades8').value ="";
+	document.getElementById('txtCourtGrades9').value ="";
+	document.getElementById('txtCourtGrades10').value ="";
+	document.getElementById('txtCourtGrades11').value ="";
+	document.getElementById('txtCourtGrades12').value ="";
+}
+
+
+
+
+
+function CheckCourt()
+{
+	var _checkA;
+	var _checkB;
+	var _checkC;
+	var _checkD;
+	var i;
+	i=0;
+	_checkA =0;
+	_checkB =0;
+	_checkC =0;
+	_checkD =0;
+	
+	_checkA = parseInt(document.getElementById('txtSummaryA').value)  / (4 * parseInt(document.getElementById('txtCourtA').value));
+	_checkB = parseInt(document.getElementById('txtSummaryB').value)  / (4 * parseInt(document.getElementById('txtCourtB').value));
+	_checkC = parseInt(document.getElementById('txtSummaryC').value)  / (4 * parseInt(document.getElementById('txtCourtC').value));
+	_checkD = parseInt(document.getElementById('txtSummaryD').value)  / (4 * parseInt(document.getElementById('txtCourtD').value));
+
+	//check summary A
+	if (parseInt(document.getElementById('txtSummaryA').value) ==0)
+	{
+		if (parseInt(document.getElementById('txtCourtA').value) ==0)
+		{
+		}
+		else
+		{
+			alert('Please check player and Court for A grade!!');
+			i=i+1;
+		}
+	}
+	else
+	{
+		if (parseInt(document.getElementById('txtCourtA').value) ==0)
+		{
+			alert('Please check player and Court for A grade!!');
+			i=i+1;
+		}
+		else
+		{
+			if (_checkA < 1)
+			{
+					alert('Total Player in Grade A do not match with the court!!');
+					i=i+1;
+			}
+		}
+	}
+
+
+	//check summary B
+	if (parseInt(document.getElementById('txtSummaryB').value) ==0)
+	{
+		if (parseInt(document.getElementById('txtCourtB').value) ==0)
+		{
+		}
+		else
+		{
+			alert('Please check player and Court for B grade!!');
+			i=i+1;
+		}
+	}
+	else
+	{
+		if (parseInt(document.getElementById('txtCourtB').value) ==0)
+		{
+			alert('Please check player and Court for B grade!!');
+			i=i+1;
+		}
+		else
+		{
+			if (_checkB < 1)
+			{
+					alert('Total Player in Grade B do not match with the court!!');
+					i=i+1;
+			}
+		}
+	}
+
+
+	//check summary C
+	if (parseInt(document.getElementById('txtSummaryC').value) ==0)
+	{
+		if (parseInt(document.getElementById('txtCourtC').value) ==0)
+		{
+		}
+		else
+		{
+			alert('Please check player and Court for C grade!!');
+			i=i+1;
+		}
+	}
+	else
+	{
+		if (parseInt(document.getElementById('txtCourtC').value) ==0)
+		{
+			alert('Please check player and Court for C grade!!');
+			i=i+1;
+		}
+		else
+		{
+			if (_checkC < 1)
+			{
+					alert('Total Player in Grade C do not match with the court!!');
+					i=i+1;
+			}
+		}
+	}
+	
+	//check summary D
+	if (parseInt(document.getElementById('txtSummaryD').value) ==0)
+	{
+		if (parseInt(document.getElementById('txtCourtD').value) ==0)
+		{
+		}
+		else
+		{
+			alert('Please check player and Court for D grade!!');
+			i=i+1;
+		}
+	}
+	else
+	{
+		if (parseInt(document.getElementById('txtCourtD').value) ==0)
+		{
+			alert('Please check player and Court for D grade!!');
+			i=i+1;
+		}
+		else
+		{
+			if (_checkD < 1)
+			{
+					alert('Total Player in Grade D do not match with the court!!');
+					i=i+1;
+			}
+		}
+	}
+
+
+	if (i >0)
+	{
+		return false;
+	}
+	else
+	{
+		return true;	
+	}
+}
+
+
+function CheckSummary()
+{
+	var _totala;
+	var _totalb;
+	var _totalc;
+	var _totald;
+	
+	_totala =0;
+	_totalb =0;
+	_totalc =0;
+	_totald =0;
+	
+	if (document.getElementById('txtName1').value.length > 0)
+	{
+		if (document.myForm.txtGrade1.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade1.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade1.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade1.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName2').value.length > 0)
+	{
+		if (document.myForm.txtGrade2.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade2.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade2.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade2.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName3').value.length > 0)
+	{
+		if (document.myForm.txtGrade3.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade3.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade3.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade3.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName4').value.length > 0)
+	{
+		if (document.myForm.txtGrade4.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade4.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade4.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade4.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName5').value.length > 0)
+	{
+		if (document.myForm.txtGrade5.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade5.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade5.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade5.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName6').value.length > 0)
+	{
+		if (document.myForm.txtGrade6.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade6.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade6.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade6.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName7').value.length > 0)
+	{
+		if (document.myForm.txtGrade7.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade7.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade7.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade7.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName8').value.length > 0)
+	{
+		if (document.myForm.txtGrade8.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade8.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade8.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade8.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName9').value.length > 0)
+	{
+		if (document.myForm.txtGrade9.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade9.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade9.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade9.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName10').value.length > 0)
+	{
+		if (document.myForm.txtGrade10.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade10.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade10.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade10.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}	
+	
+	
+		if (document.getElementById('txtName11').value.length > 0)
+	{
+		if (document.myForm.txtGrade11.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade11.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade11.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade11.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName12').value.length > 0)
+	{
+		if (document.myForm.txtGrade12.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade12.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade12.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade12.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName13').value.length > 0)
+	{
+		if (document.myForm.txtGrade13.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade13.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade13.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade13.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName14').value.length > 0)
+	{
+		if (document.myForm.txtGrade14.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade14.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade14.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade14.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName15').value.length > 0)
+	{
+		if (document.myForm.txtGrade15.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade15.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade15.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade15.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName16').value.length > 0)
+	{
+		if (document.myForm.txtGrade16.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade16.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade16.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade16.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName17').value.length > 0)
+	{
+		if (document.myForm.txtGrade17.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade17.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade17.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade17.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName18').value.length > 0)
+	{
+		if (document.myForm.txtGrade18.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade18.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade18.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade18.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName19').value.length > 0)
+	{
+		if (document.myForm.txtGrade19.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade19.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade19.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade19.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName20').value.length > 0)
+	{
+		if (document.myForm.txtGrade20.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade20.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade20.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade20.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}	
+
+
+
+
+
+	if (document.getElementById('txtName21').value.length > 0)
+	{
+		if (document.myForm.txtGrade21.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade21.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade21.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade21.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName22').value.length > 0)
+	{
+		if (document.myForm.txtGrade22.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade22.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade22.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade22.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName23').value.length > 0)
+	{
+		if (document.myForm.txtGrade23.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade23.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade23.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade23.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName24').value.length > 0)
+	{
+		if (document.myForm.txtGrade24.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade24.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade24.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade24.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName25').value.length > 0)
+	{
+		if (document.myForm.txtGrade25.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade25.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade25.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade25.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName26').value.length > 0)
+	{
+		if (document.myForm.txtGrade26.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade26.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade26.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade26.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName27').value.length > 0)
+	{
+		if (document.myForm.txtGrade27.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade27.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade27.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade27.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName28').value.length > 0)
+	{
+		if (document.myForm.txtGrade28.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade28.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade28.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade28.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName29').value.length > 0)
+	{
+		if (document.myForm.txtGrade29.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade29.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade29.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade29.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName30').value.length > 0)
+	{
+		if (document.myForm.txtGrade30.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade30.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade30.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade30.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}	
+
+
+
+
+
+
+
+
+	if (document.getElementById('txtName31').value.length > 0)
+	{
+		if (document.myForm.txtGrade31.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade31.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade31.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade31.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName32').value.length > 0)
+	{
+		if (document.myForm.txtGrade32.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade32.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade32.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade32.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName33').value.length > 0)
+	{
+		if (document.myForm.txtGrade33.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade33.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade33.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade33.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName34').value.length > 0)
+	{
+		if (document.myForm.txtGrade34.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade34.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade34.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade34.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName35').value.length > 0)
+	{
+		if (document.myForm.txtGrade35.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade35.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade35.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade35.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName36').value.length > 0)
+	{
+		if (document.myForm.txtGrade36.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade36.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade36.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade36.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName37').value.length > 0)
+	{
+		if (document.myForm.txtGrade37.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade37.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade37.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade37.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName38').value.length > 0)
+	{
+		if (document.myForm.txtGrade38.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade38.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade38.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade38.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName39').value.length > 0)
+	{
+		if (document.myForm.txtGrade39.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade39.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade39.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade39.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}
+
+	if (document.getElementById('txtName40').value.length > 0)
+	{
+		if (document.myForm.txtGrade40.value == "A")
+		{
+			_totala = _totala+1;
+		}
+		if (document.myForm.txtGrade40.value == "B")
+		{
+			_totalb = _totalb+1;
+		}
+		if (document.myForm.txtGrade40.value == "C")
+		{
+			_totalc = _totalc +1;
+		}
+		if (document.myForm.txtGrade40.value == "D")
+		{
+			_totald = _totald +1;
+		}
+	}	
+
+document.getElementById('txtSummaryA').value = _totala;
+document.getElementById('txtCourtA').value = document.myForm.txtCourtsGradeA.value;
+document.getElementById('txtSummaryB').value = _totalb;
+document.getElementById('txtCourtB').value = document.myForm.txtCourtsGradeB.value;
+document.getElementById('txtSummaryC').value = _totalc;
+document.getElementById('txtCourtC').value = document.myForm.txtCourtsGradeC.value;
+document.getElementById('txtSummaryD').value = _totald;
+document.getElementById('txtCourtD').value = document.myForm.txtCourtsGradeD.value;
+
+
+
+}
+
+
+function CheckMaxCourt()
+{
+	var _Total;
+	_Total =0;
+	
+	_Total = parseInt(document.myForm.txtCourtsGradeA.value) + parseInt(document.myForm.txtCourtsGradeB.value) + parseInt(document.myForm.txtCourtsGradeC.value)  + parseInt(document.myForm.txtCourtsGradeD.value) ;
+	
+	if ( _Total > 12)
+	{
+		alert ('Total max court only 12 !! ');
+		document.myForm.txtCourtsGradeA.value =0;
+		document.myForm.txtCourtsGradeB.value =0;
+		document.myForm.txtCourtsGradeC.value =0;
+		document.myForm.txtCourtsGradeD.value =0;
+	}	
+}
+
+</script> 
+<style type="text/css">
+.style1 {
+	color: #FFFFFF;
+}
+.style4 {
+	font-size: medium;
+	color: #FFFFFF;
+}
+.style5 {
+	background-color: #FFFF00;
+}
+.style6 {
+	font-size: large;
+}
+.style7 {
+	background-color: #00FFFF;
+}
+.style8 {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+.style9 {
+	text-decoration: underline;
+}
+.style10 {
+	color: #FFFFFF;
+	font-size: large;
+}
+</style>
+</head> 
+	<body style="font-family: Arial, Helvetica, sans-serif " bgcolor="black" onload="AllDisapear();AllPlayerDisapper()" > 
+
+
+	<center>
+	
+<form name="myForm" method="post">
+ 	<table cellpadding="3" bgcolor="gray" border="5" width="100%">
+
+	<tr>
+	<td align="center" bgcolor="black"  >
+		<img src="Smash.jpg" alt="smash Logo"  > 
+	</td>
+	</tr>
+		<tr>
+	 		<td align="center"  bgcolor="black" class="style10" style="width: 100%"    >
+				<strong>Game Type: Double	 	
+			</strong>	 	
+			</td>
+
+		</tr>
+ 		<tr>
+	 		<td colspan="2" align="center" class="style1" style="width: 100%"  >
+				<table cellpadding="3" border="10">
+					<tr>
+						<td colspan="4" align="center" class="style1" bgcolor="black"  ><strong>How many Courts used for</strong></td>
+					</tr>
+					<tr>
+						<td class="style8" bgcolor="blue" ><strong>Grade A</strong></td>
+						<td class="style8" bgcolor="red" ><strong>Grade B</strong></td>
+						<td class="style8" bgcolor="green" style="width: 70px"><strong>Grade C</strong></td>
+						<td class="style8" bgcolor="purple"><strong>Grade D</strong></td>
+					</tr>
+
+					<tr>
+						<td align="center" >
+							<select name="txtCourtsGradeA" onmouseout="CheckSummary();CheckMaxCourt()" style="width: 100%">  
+								<option value="0">0</option>  
+								<option value="1">1</option>  
+								<option value="2">2</option>  
+								<option value="3">3</option>  
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>						
+						</td>
+						<td align="center" >
+
+							<select name="txtCourtsGradeB"  onmouseout="CheckSummary();CheckMaxCourt()"  style="width: 100%">  
+								<option value="0">0</option>  
+								<option value="1">1</option>  
+								<option value="2">2</option>  
+								<option value="3">3</option>  
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+						
+						</td>
+						<td align="center">
+							<select name="txtCourtsGradeC"  style="width: 100%" onmouseout="CheckSummary();CheckMaxCourt()">  
+								<option value="0">0</option>  
+								<option value="1">1</option>  
+								<option value="2">2</option>  
+								<option value="3">3</option>  
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+						
+						</td>
+						<td align="center" >
+							<select name="txtCourtsGradeD"  style="width: 100%" onmouseout="CheckSummary();CheckMaxCourt()">  
+								<option value="0">0</option>  
+								<option value="1">1</option>  
+								<option value="2">2</option>  
+								<option value="3">3</option>  
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+				 		</td>	
+					</tr>
+				</table>
+	 		</td>	
+	 	</tr>	
+ 
+		 
+		<tr>
+			<td colspan="2" align="center" class="style4" bgcolor="black" style="width: 100%" >
+				<strong>Please type Player Name including the Grade
+			</strong>
+			<br/><br/>
+			<table><tr>
+			<td>
+										<INPUT TYPE="BUTTON" VALUE="Add Player" ONCLICK="AddRow()" style="width: 182px; font-weight: bold; height: 47px;">									
+									</td>
+									<td>
+										<INPUT TYPE="BUTTON" VALUE="Remove Player" ONCLICK="RemoveRow()" style="width: 162px; font-weight: bold; height: 47px;">									
+									</td>
+
+			</tr></table>
+			
+			</td>
+			
+		</tr>
+		<tr>
+			<td colspan="2" align="center" style="width: 100%"  >
+				<table cellpadding="3" >
+						
+					<tr>
+
+						<td valign="top" >
+							<table border="1" >
+								<Tr valign="top" >
+									<td ><strong>No</strong> </td>
+									<td  align="center" ><strong>Player</strong></td>
+									<td ><strong>Grade</strong>
+									
+								</Tr>
+							
+								<Tr id="RowNo1">
+									<td >1. </td>
+									<td ><input id="txtName1" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td style="width: 100%">
+										<select name="txtGrade1" onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo2">
+									<td>2. </td>
+									<td><input id="txtName2" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade2" onmouseout="CheckSummary()"  style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo3">
+									<td>3. </td>
+									<td><input id="txtName3" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade3" onmouseout="CheckSummary()"  style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo4">
+									<td>4. </td>
+									<td><input id="txtName4" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade4"  onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo5">
+									<td>5. </td>
+									<td><input id="txtName5" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade5"  onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo6">
+									<td>6. </td>
+									<td><input id="txtName6" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade6"  onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo7">
+									<td>7. </td>
+									<td><input id="txtName7" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade7"  onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo8">
+									<td>8. </td>
+									<td><input id="txtName8" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade8"  onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo9">
+									<td>9. </td>
+									<td><input id="txtName9" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade9"  onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+																	</Tr>
+								<Tr id="RowNo10">
+									<td>10. </td>
+									<td><input id="txtName10" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+									<td>
+										<select name="txtGrade10"  onmouseout="CheckSummary()" style="width: 100%">  
+											<option value="A">A</option>  
+											<option value="B">B</option>  
+											<option value="C">C</option>  
+											<option value="D">D</option>
+										</select>
+									</td>
+									
+								</Tr>
+								
+
+
+						
+
+						
+							
+
+								
+							</table>
+						
+						</td>
+						
+						
+						<td valign="top" >
+							<table border="1" >
+
+								<Tr id="RowNo11a" valign="top" >
+									<td ><strong>No</strong> </td>
+									<td  align="center" ><strong>Player</strong></td>
+									<td ><strong>Grade</strong>
+			
+								</Tr>
+								
+								
+								<Tr valign="top" id="RowNo11">
+							<td >11. </td>
+							<td ><input id="txtName11" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td >
+								<select name="txtGrade11"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top" id="RowNo12">
+							<td>12. </td>
+							<td><input id="txtName12" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade12"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top" id="RowNo13">
+							<td style="height: 32px">13. </td>
+							<td style="height: 32px"><input id="txtName13" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td style="height: 32px">
+								<select name="txtGrade13"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top"  id="RowNo14">
+							<td>14. </td>
+							<td><input id="txtName14" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade14"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top"  id="RowNo15">
+							<td>15. </td>
+							<td><input id="txtName15" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade15"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top"  id="RowNo16">
+							<td>16. </td>
+							<td><input id="txtName16" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade16"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top" id="RowNo17">
+							<td>17. </td>
+							<td><input id="txtName17" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade17"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top" id="RowNo18">
+							<td>18. </td>
+							<td><input id="txtName18" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade18"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top" id="RowNo19">
+							<td>19. </td>
+							<td><input id="txtName19" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade19"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+						<Tr valign="top" id="RowNo20">
+							<td>20. </td>
+							<td><input id="txtName20" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+							<td>
+								<select name="txtGrade20"  onmouseout="CheckSummary()" style="width: 100%">  
+									<option value="A">A</option>  
+									<option value="B">B</option>  
+									<option value="C">C</option>  
+									<option value="D">D</option>
+								</select>
+							</td>
+						</Tr>
+							</table>
+						</td>
+						<td  valign="top" >
+						<table border="1" >
+
+								<Tr valign="top"  id="RowNo21a">
+									<td style="width: 22px" ><strong>No</strong> </td>
+									<td  align="center" ><strong>Player</strong></td>
+									<td ><strong>Grade</strong>
+						
+								</Tr>
+								
+									 <Tr valign="top" id="RowNo21">
+								<td style="width: 22px">21. </td>
+								<td><input id="txtName21" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade21"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo22">
+								<td style="width: 22px">22. </td>
+								<td><input id="txtName22" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade22"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo23">
+								<td style="width: 22px">23. </td>
+								<td><input id="txtName23" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade23"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo24">
+								<td style="width: 22px">24. </td>
+								<td><input id="txtName24" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade24"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo25">
+								<td style="width: 22px">25. </td>
+								<td><input id="txtName25" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade25"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo26">
+								<td style="width: 22px">26. </td>
+								<td><input id="txtName26" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade26"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo27">
+								<td style="width: 22px">27. </td>
+								<td><input id="txtName27" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade27"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo28">
+								<td style="width: 22px">28. </td>
+								<td><input id="txtName28" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade28"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo29">
+								<td style="width: 22px">29. </td>
+								<td><input id="txtName29" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade29"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo30">
+								<td style="width: 22px">30. </td>
+								<td><input id="txtName30" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade30"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+
+							</table>
+						</td>
+
+<td  valign="top" >
+					<table border="1">
+
+								<Tr valign="top"  id="RowNo31a">
+									<td ><strong>No</strong> </td>
+									<td  align="center" ><strong>Player</strong></td>
+									<td ><strong>Grade</strong>
+						
+								</Tr>
+								
+								<Tr valign="top" id="RowNo31">
+								<td>31. </td>
+								<td><input id="txtName31" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade31"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo32">
+								<td>32. </td>
+								<td><input id="txtName32" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade32"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo33">
+								<td>33. </td>
+								<td><input id="txtName33" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade33"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo34">
+								<td>34. </td>
+								<td><input id="txtName34" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade34"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo35">
+								<td>35. </td>
+								<td><input id="txtName35" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade35"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo36">
+								<td>36. </td>
+								<td><input id="txtName36" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade36"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo37">
+								<td>37. </td>
+								<td><input id="txtName37" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade37"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo38">
+								<td>38. </td>
+								<td><input id="txtName38" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade38"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo39">
+								<td>39. </td>
+								<td><input id="txtName39" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade39"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							<Tr valign="top" id="RowNo40">
+								<td>40. </td>
+								<td><input id="txtName40" type="text"  style="width: 100px" onmouseout="CheckSummary()"></td>
+								<td>
+									<select name="txtGrade40"  onmouseout="CheckSummary()" style="width: 100%">  
+										<option value="A">A</option>  
+										<option value="B">B</option>  
+										<option value="C">C</option>  
+										<option value="D">D</option>
+									</select>
+								</td>
+							</Tr>
+							</table>
+						</td>
+
+					</tr>
+				</table>
+			</td>
+			
+		</tr>
+
+	
+		
+
+		<tr>
+			<td colspan="2" align="left" style="width: 100%"  >
+				<table border="1" align="center" >
+					<tr>
+						<td colspan="3" align="center" >
+						<strong>Summary
+						</strong>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Grade
+						</td>
+						<td>
+							Total Players
+						</td>
+						<td>
+							Total Court
+						</td>
+					</tr>
+					<tr>
+						<td align="center" >A</td>
+						<td>
+							<input id="txtSummaryA" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+						<td>
+							<input id="txtCourtA" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+					</tr>
+					<tr>
+						<td align="center" >B</td>
+						<td>
+							<input id="txtSummaryB" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+						<td>
+							<input id="txtCourtB" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+					</tr>
+					<tr>
+						<td align="center" >C</td>
+						<td>
+							<input id="txtSummaryC" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+						<td>
+							<input id="txtCourtC" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+					</tr>
+					<tr>
+						<td align="center" >D</td>
+						<td>
+							<input id="txtSummaryD" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+						<td>
+							<input id="txtCourtD" type="text" readonly="readonly"  style="width: 100px" class="style5">
+						</td>
+					</tr>
+				</table>					
+		 	</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" >
+			
+			
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center" style="width: 100%" >
+				<input type="button" value="RANDOM" style="width: 305px; height: 48px; font-weight: bold;" onClick="ClickSaveButton()">
+			</td>
+		</tr>
+
+
+		<tr>
+			<td colspan="2" align="center" style="width: 100%"  >
+				<table border="1" align="center" >
+					<tr id="Row00">
+						<td colspan="3" align="center" class="style6" >
+						<strong>The RESULT
+						</strong>
+						</td>
+					</tr>
+					<tr id="Row000">
+						<td class="style9">
+							<strong>Court
+						</strong>
+						</td>
+						<td class="style9">
+						<strong>Grade
+						</strong>
+						</td>
+						<td class="style9">
+						<strong>Player Name
+						
+						</strong>
+						
+						</td>
+							
+					</tr>
+					<tr id="Row1">
+						<td align="center" ><br>
+						1</td>
+						<td align="center">
+							<input id="txtCourtGrades1" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td style="height: 31px">
+							<input id="txtPlayerResult1" type="text" readonly="readonly"  style="width: 300px" class="style7">
+						</td>
+						
+
+					</tr>
+					<tr id="Row2">
+
+						<td align="center" >2</td>
+						<td align="center" >
+							<input id="txtCourtGrades2" type="text" readonly="readonly"  style="width: 30px" class="style7">
+						</td>
+						<td>
+							<input id="txtPlayerResult2"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row3">
+
+						<td align="center" >3</td>
+						<td align="center" >
+							<input id="txtCourtGrades3" type="text" readonly="readonly"  style="width: 30px" class="style7">
+						</td>
+						<td>
+							<input id="txtPlayerResult3"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row4">
+
+						<td align="center" >4</td>
+						<td align="center" >
+							<input id="txtCourtGrades4" type="text" readonly="readonly"  style="width: 30px" class="style7">
+						</td>
+						<td>
+							<input id="txtPlayerResult4"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row5">
+
+						<td align="center" >5</td>
+						<td align="center" >
+							<input id="txtCourtGrades5" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td>
+							<input id="txtPlayerResult5"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row6">
+
+						<td align="center" >6</td>
+						<td align="center" >
+							<input id="txtCourtGrades6" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td>
+							<input id="txtPlayerResult6"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row7">
+
+						<td align="center" >7</td>
+						<td align="center" >
+							<input id="txtCourtGrades7" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td>
+							<input id="txtPlayerResult7"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row8">
+
+						<td align="center" >8</td>
+						<td align="center" >
+							<input id="txtCourtGrades8" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td>
+							<input id="txtPlayerResult8"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row9">
+						<td align="center" >9</td>
+						<td align="center" >
+							<input id="txtCourtGrades9" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td>
+							<input id="txtPlayerResult9"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row10">
+
+						<td align="center" >10</td>
+						<td align="center" >
+							<input id="txtCourtGrades10" type="text" readonly="readonly"  style="width: 30px" class="style7">
+						</td>
+						<td>
+							<input id="txtPlayerResult10"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row11">
+
+						<td align="center" >11</td>
+						<td align="center" >
+							<input id="txtCourtGrades11" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td>
+							<input id="txtPlayerResult11"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+					<tr id="Row12">
+
+						<td align="center" >12</td>
+						<td align="center" >
+							<input id="txtCourtGrades12" type="text" readonly="readonly"  style="width: 30px" class="style7">
+
+						</td>
+						<td>
+							<input id="txtPlayerResult12"  type="text" readonly="readonly"  style="width: 300px
+" class="style7">
+
+						</td>
+					</tr>
+				</table>					
+			</td>
+		</tr>
+ 	</table>
+	
+</form>	
+
+<table bgcolor="silver"  align="center"   >
+<tr>
+	<td>
+<span id="countdown">00:00:00</span>
+				<p>
+			        <form id="example2form">
+			            <strong>
+			            <input type='button' value='Play/Pause' onclick='Example2.Timer.toggle();' ></strong>
+						<strong>
+			            <input type='button' value='Stop/Reset' onclick='Example2.resetCountdown();' ></strong>
+			            <input type='text' name='startTime' value='300' style='width:30px;' >
+			        </form>
+			    </p>
+	
+	</td>
+	
+</tr>
+</table>
+	</center>
+	
+	</body> 
+	
+</html>

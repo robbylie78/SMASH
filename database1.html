@@ -1,0 +1,469 @@
+<!DOCTYPE HTML>
+<html> 
+<head> 
+
+<!-- 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+This is an example that shows how to create an application that uses 
+an embedded sqlite database 
+in a mobile device (iphone,ipod,ipad,android using phonegap, jquery 
+and sqlite. 
+Your phonegap project will already contain the phonegap.js. 
+You will need to download and add to your project the jquery.min.js 
+file The application will create a database called WebSqlDb with a 
+table in it called User, which contains three fields  UserId, 
+FirstName and LastName When the application is run the firsttime, if the local database does 
+not exist, the application will create the database and the table. 
+The application shows two text boxes which you can use to add values 
+to the database using the add record button The application also has a refresh button which will get the data from 
+the database and show it on the screen When the application is run on the device the onBodyLoad() function is 
+called, which sets up the database and table The Add Record button calls the AddValueToDB() function 
+The Refresh button calls the ListDBValues() function 
+There are a few alert statements in this application, which are only 
+there for debuggin purposes.  They look like this 
+alert("DEBUGGING: followed by some text"); 
+These are only in the application to indicate where the application is 
+at when it is processing functions, etc 
+You will need to comment these out before you deploy/sell your 
+application --> 
+
+<!-- include the next line to use jquery functions in your application 
+you must download this and include the directory your html file is in 
+--> 
+
+<!-- Change this if you want to allow scaling --> 
+<meta name="viewport" content="width=default-width; user-scalable=no" /> 
+<meta http-equiv="Content-type" content="text/html;charset=utf-8"> 
+<title>Embedded Sql Example</title> 
+<!-- include the next line to use phonegap javascript functions --> 
+<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script> 
+<script type="text/javascript" charset="utf-8" src="jquery.min.js"></script> 
+   
+<!-- main scripts used in this example --> 
+<script type="text/javascript" charset="utf-8"> 
+	// global variables 
+	var textboxPosition = 'NA';
+	var db; 
+	var shortName = 'WebSqlDB'; 
+	var version = '1.0'; 
+	var displayName = 'WebSqlDB'; 
+	var maxSize = 1*1024*1024; 
+	
+	// this is called when an error happens in a transaction 
+	function errorHandler(transaction, error) 
+	{ 
+   		alert('Error: ' + error.message + ' code: ' + error.code); 
+	} 
+
+	// this is called when a successful transaction happens 
+	function successCallBack() 
+	{ 
+	   //alert("DEBUGGING: success"); 
+	} 
+
+	function nullHandler(){}; 
+	// called when the application loads 
+
+	function onBodyLoad()
+	{ 
+		// This alert is used to make sure the application is loaded correctly 
+		// you can comment this out once you have the application working 
+		//alert("DEBUGGING: we are in the onBodyLoad() function"); 
+	 	if (!window.openDatabase) 
+	 	{ 
+	   		// not all mobile devices support databases  if it does not, the following alert will display 
+	   		// indicating the device will not be albe to run this application 
+	   		alert('Databases are not supported in this browser.'); 
+	   		return; 
+	 	} 
+
+		// this line tries to open the database base locally on the device 
+		// if it does not exist, it will create it and return a database object stored in variable db 
+		db = openDatabase(shortName, version, displayName,maxSize); 
+		//this line will try to create the table User in the database just created/openned 
+	 	db.transaction(function(tx){tx.executeSql( 'CREATE TABLE IF NOT EXISTS User(UserId INTEGER NOT NULL PRIMARY KEY, FirstName TEXT NOT NULL, LastName TEXT NOT NULL)', [],nullHandler,errorHandler); },errorHandler,successCallBack); 
+ 
+	  // you can uncomment this next line if you want the User table to be empty each time the application runs 
+	  // tx.executeSql( 'DROP TABLE User',nullHandler,nullHandler); 
+	  // this line actually creates the table User if it does not exist and sets up the three columns and their types 
+	  // note the UserId column is an auto incrementing column which is useful if you want to pull back distinct rows 
+	  // easily from the table. 
+	  
+	  
+} 
+
+
+//***********************************************************************************************************
+// list the values in the database to the screen using jquery to update the #lbUsers element 
+//***********************************************************************************************************
+function ListDBValues() 
+{ 
+ 	if (!window.openDatabase) 
+ 	{ 
+  		alert('Databases are not supported in this browser.'); 
+  		return; 
+ 	} 
+		// this line clears out any content in the #lbUsers element on the page so that the next few lines will show updated 
+		// content and not just keep repeating lines  $('#lbUsers').html(''); 
+		// this next section will select all the content from the User table and then go through it row by row 
+		// appending the UserId  FirstName  LastName to the  #lbUsers element on the page 
+
+		db.transaction(function(transaction) {transaction.executeSql('SELECT * FROM User;', [],function(transaction, result) {if (result != null && result.rows != null) {for (var i = 0; i < result.rows.length; i++) { var row = result.rows.item(i); $('#lbUsers').append('<br>' + row.UserId + '. ' + row.FirstName+ ' ' + row.LastName);}}},errorHandler);},errorHandler,nullHandler); 
+		return; 
+} 
+
+//***********************************************************************************************************
+// This is the function that puts values into the database using the values from the text boxes on the screen 
+//***********************************************************************************************************
+function AddValueToDB() 
+{ 
+	if (!window.openDatabase) 
+	{ 
+   		alert('Databases are not supported in this browser.'); 
+      	return; 
+ 	} 
+	// this is the section that actually inserts the values into the User table 
+
+  	db.transaction(function(transaction){transaction.executeSql('INSERT INTO User(FirstName, LastName) VALUES (?,?)',[$('#txFirstName').val(), $('#txLastName').val()], nullHandler,errorHandler);}); 
+
+     // this calls the function that will show what is in the User table in the database 
+ 	ListDBValues(); 
+ 	return false; 
+} 
+
+
+function comboInit(thelist)
+{  
+	theinput = document.getElementById(theinput);  
+  	var idx = thelist.selectedIndex;  
+  	var content = thelist.options[idx].innerHTML;  
+  	if(theinput.value == "")    
+  		theinput.value = content;	
+  	}
+
+function combo(thelist, theinput)
+{  
+	theinput = document.getElementById(theinput);    
+	var idx = thelist.selectedIndex;  
+	var content = thelist.options[idx].innerHTML;  
+	theinput.value = content;	
+}
+
+function ClickButton(sValue)
+{
+	if (textboxPosition  == 'NA')
+	{
+		textboxPosition  = 'FocusPasal';
+	}
+
+	if (textboxPosition == 'FocusPasal')
+	{
+		if (document.getElementById('txPasal').value.length ==0)
+		{
+			document.getElementById('txPasal').value = sValue;
+		} 
+		else
+		{
+			if (document.getElementById('txPasal').value.length ==1)
+			{
+				document.getElementById('txPasal').value = document.getElementById('txPasal').value + sValue;
+			} 
+			else
+			{
+				if (document.getElementById('txPasal').value.length ==2)
+				{
+					document.getElementById('txPasal').value = document.getElementById('txPasal').value + sValue;
+				} 
+				else
+				{
+					if (document.getElementById('txPasal').value.length ==3)
+					{
+						if (document.getElementById('txAyat').value.length ==0)
+						{
+							document.getElementById('txAyat').value = sValue;
+							document.getElementById('txAyat').focus();
+							textboxPosition = 'FocusAyat';
+							return;
+						} 
+					} 
+				}
+			
+			}
+		}
+
+	}
+
+	if (textboxPosition == 'FocusAyat')
+	{
+		if (document.getElementById('txAyat').value.length ==0)
+		{
+			document.getElementById('txAyat').value = sValue;
+		} 
+		else
+		{
+			if (document.getElementById('txAyat').value.length ==1)
+			{
+				document.getElementById('txAyat').value  = document.getElementById('txAyat').value + sValue;
+			} 
+			else
+			{
+				if (document.getElementById('txAyat').value.length ==2)
+				{
+					document.getElementById('txAyat').value  = document.getElementById('txAyat').value + sValue;
+				} 
+				else
+				{
+				}
+			}
+		}
+
+	}
+}
+
+
+function GoButton()
+{
+	alert('Kitab: '+ document.getElementById('theinput').value +  ' Pasal: ' + document.getElementById('txPasal').value + ' ayat: '  + document.getElementById('txAyat').value);
+}
+
+
+function ClickButtonC()
+{
+	var thePasalInput = document.getElementById('txPasal');     
+	var theAyatInput = document.getElementById('txAyat');     
+
+ 	
+ 	if (textboxPosition == 'FocusPasal')
+ 	{
+		if (document.getElementById('txPasal').value.length ==3)
+		{
+			thePasalInput.value = thePasalInput .value.substr(0, thePasalInput.value.length - 1);
+			document.getElementById('txPasal').value = thePasalInput.value;
+			return;
+		
+		}
+		if (document.getElementById('txPasal').value.length ==2)
+		{
+			thePasalInput.value = thePasalInput .value.substr(0, thePasalInput.value.length - 1);
+			document.getElementById('txPasal').value = thePasalInput.value;
+			return;
+		
+		}
+		if (document.getElementById('txPasal').value.length ==1)
+		{
+			thePasalInput.value = thePasalInput .value.substr(0, thePasalInput.value.length - 1);
+			document.getElementById('txPasal').value = thePasalInput.value;
+			return;
+		}
+
+ 	}
+
+ 	if (textboxPosition == 'FocusAyat')
+ 	{
+		if (document.getElementById('txAyat').value.length ==3)
+		{
+			theAyatInput.value = theAyatInput.value.substr(0, theAyatInput.value.length - 1);
+			document.getElementById('txAyat').value = theAyatInput.value;
+			return;
+		}
+		if (document.getElementById('txAyat').value.length ==2)
+		{
+			theAyatInput.value = theAyatInput.value.substr(0, theAyatInput.value.length - 1);
+			document.getElementById('txAyat').value = theAyatInput.value;
+			return;
+		
+		}
+		if (document.getElementById('txAyat').value.length ==1)
+		{
+			theAyatInput.value = theAyatInput.value.substr(0, theAyatInput.value.length - 1);
+			document.getElementById('txAyat').value = theAyatInput.value;
+			return;
+		}
+ 	}
+ 	
+	//alert('Kitab: '+ document.getElementById('theinput').value +  ' Pasal: ' + document.getElementById('txPasal').value + ' ayat: '  + document.getElementById('txAyat').value);
+}
+
+function ClickButtonSemiColon()
+{
+	if (document.getElementById('txPasal').value.length ==0)
+	{
+		document.getElementById('txPasal').focus();
+		textboxPosition = 'FocusPasal';
+	}
+	else
+	{
+		document.getElementById('txAyat').focus();
+		textboxPosition = 'FocusAyat';
+	}
+}
+
+function textFocus(textboxname)
+{
+	if (textboxname == 'Pasal');
+	{
+		textboxPosition = 'FocusPasal';
+		return;
+	}
+
+	if (textboxname =='Ayat');
+	{
+		textboxPosition = 'FocusAyat';
+		return;
+	}
+}
+
+</script> 
+<style type="text/css">
+.style1 {
+	color: #FFFFFF;
+}
+</style>
+</head> 
+	<body onload="onBodyLoad()" style="font-family: Arial, Helvetica, sans-serif "> 
+	<center>
+	<h1>Kitab Deuterokanonika</h1> 
+	<br>
+
+	<table>
+		<Tr>
+			<td>
+				First Name
+			</td>
+			<td>
+				<input id="txFirstName" type="text" placeholder="FirstName"> 
+			</td>
+		</Tr>
+		<Tr>
+			<td>
+				Last Name
+			</td>
+			<td>
+				<input id="txLastName" type="text" placeholder="Last Name"> 
+			</td>
+		</Tr>
+
+		<Tr>
+			<td>
+				<input type="button" value="Add record" onClick="AddValueToDB()"> 
+			</td>
+			<td>
+				<input type="button" value="Refresh" onClick="ListDBValues()"> <br> 
+			</td>
+		</Tr>
+
+		<tr>
+		<td colspan="2">
+			<span style="font-weight:bold;">Currently stored values:</span> 
+		</td>
+
+		</tr>
+		<tr>
+		<td colspan="2">
+			<span id="lbUsers"></span> 
+		</td>
+
+		</tr>
+
+	</table>	
+		
+	
+	
+	
+	<br>
+	<input type="text" id="theinput" name="theinput" style="visibility: hidden"/><br>
+
+		<table cellpadding="4" border="4" background="floor.jpg" >
+			<tr>
+			<td colspan="3" style="height: 14px">
+				<table align="center" >
+					<tr>
+						<select name="thelist" onChange="combo(this, 'theinput')" onMouseOut="comboInit(this, 'theinput')" >  
+							<option>Tobit</option>  
+							<option>Yudit</option>  
+							<option>1 Makabe</option>
+							<option>2 Makabe</option>
+							<option>Kebijaksanaan Salomo</option>
+							<option>Sirakh</option>
+							<option>Surat Yeremia</option>
+							<option>Barukh</option>
+							<option>Tambahan Daniel</option>
+							<option>Tambahan Ester</option>
+						</select>
+					
+						<input type="button" value="Go" onClick="GoButton()"> 
+					</tr>
+				</table>
+			</td>
+			</tr>
+
+			<tr>
+			<td colspan="3">
+				<table align="center" >
+					<tr>
+						<td style="height: 30px"><strong><span class="style1">Pasal</span> 
+							</strong> 
+							<input id="txPasal" type="text" placeholder="Pasal" style="width: 44px" onclick="textFocus('Pasal')">
+						</td>
+						<td style="height: 30px"><span class="style1"><strong>Ayat</strong></span>
+							<input id="txAyat" type="text" placeholder="Ayat" style="width: 44px" onclick="textFocus('Ayat')">
+						</td>
+					</tr>
+				</table>
+			</td>
+			</tr>
+			<tr align="center" >
+				<td>
+					<input type="button" value="1" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('1')">
+				</td>
+				<td>
+					<input type="button" value="2" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('2')">
+				</td>
+				<td>
+					<input type="button" value="3" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('3')"> 
+				</td>
+			</tr>
+			<tr align="center" >
+				<td>
+					<input type="button" value="4" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('4')"> 
+				</td>
+				<td>
+					<input type="button" value="5" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('5')"> 
+				</td>
+				<td>
+					<input type="button" value="6" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('6')"> 
+				</td>
+			</tr>
+	
+	
+			<tr align="center" >
+				<td>
+					<input type="button" value="7" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('7')"> 
+				</td>
+				<td>
+					<input type="button" value="8" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('8')"> 
+				</td>
+				<td>
+					<input type="button" value="9" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('9')"> 
+				</td>
+			</tr>
+	
+			<tr align="center" >
+				<td>
+					<input type="button" value="C" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButtonC()"> 
+				</td>
+				<td>
+					<input type="button" value="0" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButton('0')"> 
+				</td>
+				<td>
+					<input type="button" value=":" style="width: 50px; height: 50px; font-weight: bold;" onClick="ClickButtonSemiColon()"> 
+				</td>
+			</tr>
+	
+		</table>
+
+	</center>
+	
+	</body> 
+	
+</html>
